@@ -22,4 +22,4 @@ async def test():
   await bot.say('test')
 
 
-bot.run('token')
+bot.run(os.environ('Token'))
