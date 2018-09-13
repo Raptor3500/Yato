@@ -19,4 +19,4 @@ async def on_ready():
 
 
 
-bot.run(os.environ('Token'))
+bot.run(os.environ.get('Token'))
