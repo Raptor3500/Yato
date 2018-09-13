@@ -15,11 +15,7 @@ async def on_ready():
   print ("With the ID: " + bot.user.id)
   print ("Using discord.py v" + discord.__version__)
   print ("------")
-  
- # This is how you will make a command on the Main file
-@bot.commands()
-async def test():
-  await bot.say('test')
+
 
 
 bot.run(os.environ('Token'))
