@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 
-bot = commands.Bot(command_prefix='prefix')
+bot = commands.Bot(command_prefix='yato')
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
