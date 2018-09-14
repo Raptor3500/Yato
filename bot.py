@@ -22,7 +22,7 @@ async def on_ready():
   # Make me say shit
 @bot.command(pass_context=True)
 async def say(ctx, *args):
-    if ctx.message.author.id !== ownerID:
+    if ctx.message.author.id ==! ownerID:
         await bot.say("You are not allowed to run this command!")
     else:
         channel = ctx.message.channel
