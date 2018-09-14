@@ -21,7 +21,7 @@ async def on_ready():
 @bot.command(hidden=True, pass_context=True)
 async def setgame(ctx, *args):
     await bot.delete_message(ctx.message)
-    if ctx.message.author.id == unrealismID:
+    if ctx.message.author.id == 274298631517896704:
         game = ' '.join(args)
         server = ctx.message.server
         current_status = server.me.status if server is not None else None
