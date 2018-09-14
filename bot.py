@@ -5,6 +5,7 @@ import asyncio
 import os
 
 bot = commands.Bot(command_prefix='yato')
+aiosession = aiohttp.ClientSession(loop=bot.loop)
 ownerID = "274298631517896704"
 
 # To remove the help command and make your own help command
