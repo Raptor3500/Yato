@@ -44,6 +44,12 @@ async def kill(ctx, user: discord.Member=None):
             await bot.say(ctx.message.author.mention + ": Why do you want to kill my developer?")
         elif user.id == ctx.message.author.id:
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
+            
+            #My invite link
+            @bot.command(pass_context=True)
+async def invite(ctx):
+    await bot.say("Here is my invite link!")
+    await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
          
   
 
