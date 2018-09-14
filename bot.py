@@ -23,8 +23,6 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def say(ctx, *args):
     if ctx.message.author.id ==! ownerID:
-        await bot.say("You are not allowed to run this command!")
-    else:
         channel = ctx.message.channel
         mesg = ' '.join(args)
         await bot.delete_message(ctx.message)
@@ -32,6 +30,8 @@ async def say(ctx, *args):
         await asyncio.sleep(1)
         await bot.say(mesg)
         print (ctx.message.author.id + " or " + ctx.message.author.name + " made me say '{}'".format(mesg))
+    else:
+      await bot.say("You are not allowed to run this command!")
   
 
 
