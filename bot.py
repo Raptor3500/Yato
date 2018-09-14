@@ -44,8 +44,8 @@ async def kill(ctx, user: discord.Member=None):
             await bot.say(ctx.message.author.mention + ": Why do you want to kill my developer?")
         elif user.id == ctx.message.author.id:
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
-        elif user.id == ctx.message.author.mention.id:
-          await bot.say(ctx.message.author.mention + ": I have killed '{}'".format(.user.name))
+            else:
+              await bot.say(ctx.message.author.mention + ": I have killed {}".format(user.name))
   
 
 
