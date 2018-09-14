@@ -45,11 +45,12 @@ async def kill(ctx, user: discord.Member=None):
         elif user.id == ctx.message.author.id:
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
             
-            #My invite link
-            @bot.command(pass_context=True)
-async def inviteme(ctx):
-    await bot.say("Here is my invite link!")
-    await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
+#invite me
+@bot.command(pass_context=True)
+async def invite(ctx):
+  await bot.say("God Yato speaking you want me in your server?")
+  await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
+  await bot.say("here you go that'll be five yen")
          
   
 
