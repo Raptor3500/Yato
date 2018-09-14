@@ -18,7 +18,7 @@ async def on_ready():
   print ("Using discord.py v" + discord.__version__)
   print ("------")
   
-  # Make me say shit
+  # Make me say stuff
 @bot.command(pass_context=True)
 async def say(ctx, *args):
     if ctx.message.author.id in ownerID:
@@ -44,6 +44,8 @@ async def kill(ctx, user: discord.Member=None):
             await bot.say(ctx.message.author.mention + ": Why do you want to kill my developer?")
         elif user.id == ctx.message.author.id:
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
+        elif user.id == ctx.message.author.mention.id:
+          await bot.say(ctx.message.author.mention + ": I have killed '{}'".format(.user.name))
   
 
 
