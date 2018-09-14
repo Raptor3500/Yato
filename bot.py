@@ -31,6 +31,19 @@ async def say(ctx, *args):
         print (ctx.message.author.id + " or " + ctx.message.author.name + " made me say '{}'".format(mesg))
     else:
       await bot.say("You are not allowed to run this command!")
+      
+      # I want to kill people
+@bot.command(pass_context=True)
+async def kill(ctx, user: discord.Member=None):
+        if user is None:
+            await bot.say(ctx.message.author.mention + ": I can't kill anyone unless you tell me who to kill!")
+            return
+        if user.id == "489775956731363328":
+            await bot.say(ctx.message.author.mention + ": I won't let you kill me! :knife:")
+        elif user.id == ownerID:
+            await bot.say(ctx.message.author.mention + ": Why do you want to kill my developer?")
+        elif user.id == ctx.message.author.id:
+            await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
   
 
 
