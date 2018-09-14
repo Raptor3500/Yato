@@ -6,7 +6,6 @@ import os
 
 bot = commands.Bot(command_prefix='yato')
 ownerID = "274298631517896704"
-KamitastuID = "400418638240415745"
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
@@ -47,7 +46,7 @@ async def kill(ctx, user: discord.Member=None):
             await bot.say(ctx.message.author.mention + ": Why do you want me to kill you?")
         elif user.id == ctx.message.author.mention:
           await bot.say(ctx.message.author.mention + ": I have killed {}".format(user.name))
-          elif user.id == KamitatsuID:
+          elif user.id == 400418638240415745:
             await bot.say(ctx.message.author.mention + ": God vs a God huh Sekki!! Sorry Im not losing this one")
             
 #invite me
