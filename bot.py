@@ -22,7 +22,7 @@ async def on_ready():
   # Make me say shit
 @bot.command(pass_context=True)
 async def say(ctx, *args):
-    if ctx.message.author.id ==! ownerID:
+    if ctx.message.author.id in ownerID:
         channel = ctx.message.channel
         mesg = ' '.join(args)
         await bot.delete_message(ctx.message)
