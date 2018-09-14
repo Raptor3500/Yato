@@ -47,7 +47,7 @@ async def kill(ctx, user: discord.Member=None):
             
             #My invite link
             @bot.command(pass_context=True)
-async def invite(ctx):
+async def inviteme(ctx):
     await bot.say("Here is my invite link!")
     await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
          
