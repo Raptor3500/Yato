@@ -17,6 +17,20 @@ async def on_ready():
   print ("Using discord.py v" + discord.__version__)
   print ("------")
   
+  # Make me say shit
+@bot.command(pass_context=True)
+async def say(ctx, *args):
+    if ctx.message.author.id !== 274298631517896704:
+        await bot.say("You are not allowed to run this command!")
+    else:
+        channel = ctx.message.channel
+        mesg = ' '.join(args)
+        await bot.delete_message(ctx.message)
+        await bot.send_typing(channel)
+        await asyncio.sleep(1)
+        await bot.say(mesg)
+        print (ctx.message.author.id + " or " + ctx.message.author.name + " made me say '{}'".format(mesg))
+  
 
 
 
