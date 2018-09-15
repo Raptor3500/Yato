@@ -68,7 +68,7 @@ async def insult(ctx, user: discord.Member=None):
   if user.id == "462099439784427523":
     await bot.say("You say you're a good person but yet you intentionally piss people off and make people more depressed")
     
-    @bot.command(pass_context=true)
+@bot.command(pass_context=true)
 async def help(ctx):
   author = ctx.message.author
   
