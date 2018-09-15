@@ -56,7 +56,7 @@ async def invite(ctx):
   await bot.say("here you go that'll be five yen")
   
 @bot.command(pass_context=True)
-async def insult(ctx):
+async def insult(ctx, user: discord.Member=None):
   if user is None:
     await bot.say("I cant insult air just because im a god doesnt mean I can do everything")
     return
