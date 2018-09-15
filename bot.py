@@ -54,6 +54,14 @@ async def invite(ctx):
   await bot.say("God Yato speaking you want me in your server?")
   await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
   await bot.say("here you go that'll be five yen")
+  
+@bot.command(pass_context=True)
+async def insult(ctx):
+  if user is None:
+    await bot.say("I cant insult air just because im a god doesnt mean I can do everything")
+    return
+  if user.id == "274298631517896704":
+    await bot.say("My developer is so useless he cant even make a bot on his own just look at Rem, Agent did most of the work on her.
          
   
 
