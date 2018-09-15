@@ -10,6 +10,8 @@ ownerID = "274298631517896704"
 # To remove the help command and make your own help command
 #bot.remove_command('help')
 
+@bot.remove_command('help')
+
 @bot.event
 async def on_ready():
   print ("------")
