@@ -62,6 +62,8 @@ async def insult(ctx, user: discord.Member=None):
     return
   if user.id == ownerID:
     await bot.say("My developer is so useless he cant even make a bot on his own just look at Rem, Agent did most of the work on her.")
+  if user.id == "329337654850093056":
+    await bot.say("You stupid cuck You are Big Gae just ask Trunks")
          
   
 
