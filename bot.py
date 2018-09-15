@@ -60,7 +60,7 @@ async def insult(ctx, user: discord.Member=None):
   if user is None:
     await bot.say("I cant insult air just because im a god doesnt mean I can do everything")
     return
-  if user.id == "274298631517896704":
+  if user.id == ownerID:
     await bot.say("My developer is so useless he cant even make a bot on his own just look at Rem, Agent did most of the work on her.")
          
   
