@@ -76,7 +76,7 @@ async def help(ctx):
   
   
   embed.set_author(name='Help')
-  embed.add_field(name='say', value 'Says your message', inline=false)
+  embed.add_field(name='say', value 'Says your message' , inline=false)
   
   await bot.send_message(author, embed=embed)
          
