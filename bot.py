@@ -67,6 +67,18 @@ async def insult(ctx, user: discord.Member=None):
     await bot.say("You stupid cuck You are Big Gae just ask Trunks")
   if user.id == "462099439784427523":
     await bot.say("You say you're a good person but yet you intentionally piss people off and make people more depressed")
+    
+    @bot.command(pass_context=true)
+async def help(ctx):
+  author = ctx.message.author
+  
+  embed = discord.colour.blue()
+  )
+  
+  embed.set_author(name='Help')
+  embed.add_field(name='say', value 'Says your message', inline=false)
+  
+  await bot.send_message(author, embed=embed)
          
   
 
