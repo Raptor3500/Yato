@@ -73,6 +73,7 @@ async def help(ctx):
   embed = discord.Embed(name='help', description=None, color=0x0044b2
   embed.set_author(name=ctx.message.author.name)
   embed.add_field(name='say', value='Says your message', inline=False)
+  await bot.say(embed=embed)
          
   
 
