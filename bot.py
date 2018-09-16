@@ -70,9 +70,8 @@ async def insult(ctx, user: discord.Member=None):
     
 @bot.command(pass_context=true)
 async def help(ctx):
-  embed = discord.Embed(name='help', description=None, color=0x0044b2
-  embed.add_field(name='say', value='Says your message', inline=False)
-  await bot.say(embed=embed)
+  embed = discord.Embed(name='Help', description=None, color=0x0044b2)
+  embed.add_field(name='say', inline='Says your message.', inline=False)
          
   
 
