@@ -9,7 +9,6 @@ ownerID = "274298631517896704"
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
-bot.remove_command('help')
 
 @bot.event
 async def on_ready():
@@ -22,6 +21,7 @@ async def on_ready():
   # Make me say stuff
 @bot.command(pass_context=True)
 async def say(ctx, *args):
+    """Make me say your message"""
     if ctx.message.author.id in ownerID:
         channel = ctx.message.channel
         mesg = ' '.join(args)
@@ -68,10 +68,6 @@ async def insult(ctx, user: discord.Member=None):
   if user.id == "462099439784427523":
     await bot.say("You say you're a good person but yet you intentionally piss people off and make people more depressed")
     
-@bot.command(pass_context=true)
-async def help(ctx):
-  embed = discord.Embed(name='Help', description=None, color=0x0044b2)
-  embed.add_field(name='say', inline='Says your message.', inline=False)
          
   
 
