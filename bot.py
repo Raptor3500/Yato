@@ -22,7 +22,6 @@ async def on_ready():
 @bot.command(pass_context=True)
 async def say(ctx, *args):
     """Make me say your message"""
-    
     if ctx.message.author.id in ownerID:
         channel = ctx.message.channel
         mesg = ' '.join(args)
@@ -37,6 +36,7 @@ async def say(ctx, *args):
 @bot.command(pass_context=True)
 async def kill(ctx, user: discord.Member=None):
   """makes me kill someone"""
+        
         if user is None:
             await bot.say(ctx.message.author.mention + ": I can't kill anyone unless you tell me who to kill!")
             return
