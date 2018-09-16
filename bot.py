@@ -35,6 +35,7 @@ async def say(ctx, *args):
       
 @bot.command(pass_context=True)
 async def kill(ctx, user: discord.Member=None):
+  """Make me kill someone"""
         if user is None:
             await bot.say(ctx.message.author.mention + ": I can't kill anyone unless you tell me who to kill!")
             return
@@ -52,12 +53,14 @@ async def kill(ctx, user: discord.Member=None):
 #invite me
 @bot.command(pass_context=True)
 async def invite(ctx):
+  """Invite me"""
   await bot.say("God Yato speaking you want me in your server?")
   await bot.say("https://discordapp.com/api/oauth2/authorize?client_id=489775956731363328&permissions=8&scope=bot")
   await bot.say("here you go that'll be five yen")
   
 @bot.command(pass_context=True)
 async def insult(ctx, user: discord.Member=None):
+  """Make me insult someone"""
   if user is None:
     await bot.say("I cant insult air just because im a god doesnt mean I can do everything")
     return
