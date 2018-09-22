@@ -6,6 +6,7 @@ import os
 
 bot = commands.Bot(command_prefix='yato ')
 ownerID = "274298631517896704"
+ownerID2 = "329337654850093056"
 
 # To remove the help command and make your own help command
 #bot.remove_command('help')
@@ -30,6 +31,15 @@ async def say(ctx, *args):
         await asyncio.sleep(1)
         await bot.say(mesg)
         print (ctx.message.author.id + " or " + ctx.message.author.name + " made me say '{}'".format(mesg))
+        if ctx.message.author.id in ownerID:
+          channel = ctx.message.channel
+          mesg = ' '.join(args)
+          await bots.delete_message(ctx.message)
+          await bot.delete_message(ctx.message)
+          await bot.send_typing(channel)
+          await asyncio.sleep(1)
+          await bot.say(mesg)
+          print (ctx.message.author.id + " or " + ctx.message.author.name + " made me say '{}'".format(mesg))
     else:
       await bot.say("You are not allowed to run this command!")
       
