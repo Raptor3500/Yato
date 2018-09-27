@@ -18,7 +18,6 @@ async def on_ready():
   print ("With the ID: " + bot.user.id)
   print ("Using discord.py v" + discord.__version__)
   print ("------")
-  await client.change_status(game=discord.Game(name='whatever'))
   
   
   # Make me say stuff
