@@ -78,6 +78,12 @@ async def insult(ctx, user: discord.Member=None):
     await bot.say("You stupid cuck You are Big Gae just ask Trunks")
   if user.id == "462099439784427523":
     await bot.say("You say you're a good person but yet you intentionally piss people off and make people more depressed")
+    
+@bot.command(pass_context=True)
+async def setgame(ctx, *args):
+  if ctx.message.author.id in ownerID:
+    mesg = ' '.join(args)
+    await bot.change_presence(game=discord.Game(name= (mesg)))
          
   
 
