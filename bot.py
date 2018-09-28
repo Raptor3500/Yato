@@ -90,7 +90,6 @@ async def bfmode(ctx, *args):
   if ctx.message.author.id in ownerID:
     mesg = ' '.join(args)
     await bot.change_presence(game=discord.Game(name= 'with Testings ;)))'))
-    me = context.message.server.me
     await bot.change_nickname(me, "Testings BF")
          
   
