@@ -1,10 +1,9 @@
 import discord
 from discord.ext import commands
-import loadconfig
 
 OK = 0x89f442
 Error = 0xf44141
-ownerID = loadconfig.ownerID
+ownerID = '274298631517896704'
 
 class Owner():
     def __init__(self, bot):
