@@ -1,5 +1,4 @@
 import discord
-import loadconfig
 import asyncio
 
 class ready():
@@ -10,10 +9,8 @@ class ready():
         print ("------")
         print ("Hey, my name is " + self.bot.user.name + ".")
         print ("My ID is " + self.bot.user.id)
-        print ("And I am coded with discord.py v" + discord.__version__)
-        print (loadconfig.__git__)
         print ("------")
-        await self.bot.change_presence(game=discord.Game(name='v1.1-dev'))
+        await self.bot.change_presence(game=discord.Game(name='v2'))
 
 
 def setup(bot):
