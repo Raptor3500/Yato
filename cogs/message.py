@@ -21,6 +21,11 @@ class message():
             r = json.loads(requests.post('https://cleverbot.io/1.0/ask', json={'user':user, 'key':key, 'nick':'claire', 'text':txt}).text)
             if r['status'] == 'success':
                 await self.bot.send_message(message.channel, r['response'] )
+                
+        if 'I am an adult' in message.content:
+            await self.bot.send_message(message.channel, "pls help")
+        if message.author.bot.id is '329337654850093056' and if 'I am an adult' in message.content:
+            await self.bot.send_message(message.channel, "No no you are not")
 
 
 
