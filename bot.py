@@ -93,17 +93,10 @@ async def bfmode(ctx, *args):
     await bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
     await asyncio.sleep(3)
     await bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
-    await bot.wait_until_ready()
-    counter = 0
-    channel = discord.Object(id='478726912370540566')
-    while not bot.is_closed:
-        counter += 1
-        await client.send_message(channel, counter)
-        await asyncio.sleep(60) # task runs every 60 seconds
     
          
   
 
 
-bot.loop.create_task(bfmode())
+bot.loop(bfmode())
 bot.run(os.environ.get('Token'))
