@@ -24,7 +24,7 @@ class message():
                 
         if 'I am an adult' in message.content:
             await self.bot.send_message(message.channel, "pls help")
-        if message.author.bot.id is '329337654850093056' and if 'I am an adult' in message.content:
+        elif message.author.bot.id is '329337654850093056'
             await self.bot.send_message(message.channel, "No no you are not")
 
 
