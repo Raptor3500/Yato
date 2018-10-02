@@ -6,8 +6,6 @@ import os
 
 bot = commands.Bot  (command_prefix='yato '
 
-bot.remove_command('help')
-
 if __name__ == "__main__":
     for extension in startup_extensions:
         try:
