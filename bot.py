@@ -4,7 +4,7 @@ from discord.ext.commands import Bot
 import asyncio
 import os
 
-bot = commands.Bot  (command_prefix='yato '
+bot = commands.Bot  (command_prefix='yato ')
 bot.remove_command('help')
 
 if __name__ == "__main__":
