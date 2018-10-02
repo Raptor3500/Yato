@@ -93,6 +93,11 @@ async def bfmode(ctx, *args):
     await bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
     await asyncio.sleep(3)
     await bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
+  if ctx.message.author.id is '489775956731363328':
+    mesg = ' '.join(args)
+    await bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
+    await asyncio.sleep(3)
+    await bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
     
          
   
