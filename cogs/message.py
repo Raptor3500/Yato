@@ -10,7 +10,7 @@ class message():
         self.bot = bot
 
     async def on_message(self, message):
-        if 'Gae' and 'gae' in message.content:
+        if 'gae' in message.content:
             await self.bot.send_message(message.channel, "Goth")
             await self.bot.send_message(message.channel, "And")
             await self.bot.send_message(message.channel, "Emo")
