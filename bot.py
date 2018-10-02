@@ -93,7 +93,7 @@ async def bfmode(ctx, *args):
     await bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
     await asyncio.sleep(3)
     await bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
-    await bot.loop
+    bot.loop
          
   
 
