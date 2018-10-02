@@ -19,9 +19,6 @@ async def on_ready():
   print ("Using discord.py v" + discord.__version__)
   print ("------")
   
-bot.loop.create_task(bfmode())
-  
-  
   # Make me say stuff
 @bot.command(pass_context=True)
 async def say(ctx, *args):
@@ -96,7 +93,7 @@ async def bfmode(ctx, *args):
     await bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
     await asyncio.sleep(3)
     await bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
-    await bot.loop
+    await bot.loop.create_task(bfmode())
          
   
 
