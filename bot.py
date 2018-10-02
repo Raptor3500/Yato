@@ -91,7 +91,8 @@ async def setgame(ctx, *args):
 async def bfmode(ctx, *args):
   if ctx.message.author.id in ownerID:
     mesg = ' '.join(args)
-    await bot.change_presence(game=discord.Game(name= 'with Testings ;)))'))
+    await bot.loop.bot.change_presence(game=discord.Game(name= 'I am Testings boyfriend'))
+    await bot.loop.bot.change_presence(game=discord.Game(name= 'With Testings ;)))'))
          
   
 
