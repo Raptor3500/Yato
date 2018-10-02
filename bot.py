@@ -8,7 +8,7 @@ bot = commands.Bot  (command_prefix='yato ')
 bot.remove_command('help')
 
 startup_extensions = [
-  'cogs'
+  'main'
 ]
 
 
