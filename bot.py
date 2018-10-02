@@ -98,5 +98,4 @@ async def bfmode(ctx, *args):
   
 
 
-bot.loop(bfmode())
 bot.run(os.environ.get('Token'))
