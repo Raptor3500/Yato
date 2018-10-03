@@ -22,10 +22,8 @@ class message():
             if r['status'] == 'success':
                 await self.bot.send_message(message.channel, r['response'] )
                 
-        if 'I am an adult' in message.content:
-            await self.bot.send_message(message.channel, "pls help")
-            elif message.author.bot.id is '329337654850093056'
-            await self.bot.send_message(message.channel, "No no you are not")
+        if message.author.id is '329337654850093056' and 'I am an adult' in message.content:
+            await self.bot.send_message(message.channel, "No, no you are not")
 
 
 
