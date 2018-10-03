@@ -9,6 +9,11 @@ from async_timeout import timeout
 from functools import partial
 from youtube_dl import YoutubeDL
 
+class Music:           
+    def __init__(self, bot):
+        self.bot = bot
+        self.players = {}
+        
 ytdlopts = {
     'format': 'bestaudio/best',
     'outtmpl': 'downloads/%(extractor)s-%(id)s-%(title)s.%(ext)s',
@@ -143,16 +148,7 @@ class MusicPlayer:
                        
       def destroy(self,guild):
           return self.bot.loop.create_task(self._cog.cleaniup(guild))
-                       
-class Music:
-                       
-                       
-    __slots__ = ('bot', 'players')
-                       
-    def __init__(self, bot):
-        self.bot = bot
-        self.players = {}
-                       
+                                              
     async def cleanup(self, guild):
         try:
             await guild.voice_client.disconnect()
