@@ -141,7 +141,6 @@ class MusicPlayer:
             self.current = None
 
             try:
-                # We are no longer playing this song...
                 await self.np.delete()
             except discord.HTTPException:
                 pass
